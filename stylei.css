@@ -62,13 +62,17 @@ left: 1674.9px;
   left: 2219.94px;
   top: 1153.95px;
 }
+#circle2{
+  left: 2000.94px;
+  top: 1153.95px;
+}
 
 .hover-text {
     display: block;
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
+    position: sticky;
     top: -110%;
     font-size:300px;
 }
