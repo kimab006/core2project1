@@ -1,0 +1,88 @@
+
+/* .image-button {
+   background-image: url('assets/button.png');
+   background-size: cover;
+   width: 100px;
+   height: 50px;
+   border: none;
+   cursor: pointer;
+} */
+
+/* .background {
+    width: 2106.24px;
+    height: 1521.6px;
+} */
+
+
+.relative {
+    position: relative;
+    width: 6318.72px;
+    height: 4564.8px;
+    border: 3px solid #73AD21;
+      background: url("../core2project1/assets/circular_maze.png");
+      background-image: url("../core2project1/assets/circular_maze.png");
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: 6318.72px 4564.8px;
+    z-index: -9;
+  }
+  
+  .absolute {
+    position: absolute;
+    top: 80px;
+    right: 600px;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 3;
+  }
+
+  .circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(4, 208, 82);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 6;
+    transform: translate(-50%,-50%);
+}
+#circle1{
+left: 1674.9px;
+ top: 1127.7px;
+}
+#circle2{
+  left: 2219.94px;
+  top: 1153.95px;
+}
+
+.hover-text {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: -110%;
+    font-size:300px;
+}
+
+#circle1:hover + #hover-text1 {
+    display: block;
+}
+
+#circle2:hover + #hover-text2 {
+  display: block;
+}
+
+
+
+.demo {
+  z-index: 6;
+}
