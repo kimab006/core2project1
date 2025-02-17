@@ -1,26 +1,20 @@
 
 body {
-    margin: 0;
     background-color: black;
+  }
+  
+  #final-objective {
+    position: fixed;
+    top: 20px;
+    left: 20px;  /* Changed from right: 20px */
     color: rgb(237, 89, 3);
+    z-index: 999;
     font-family: "Space Mono", serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
-.content {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.message {
-    font-size: 27px;
+    font-size: 25pt;
+    width: 25%;
+    padding: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     line-height: 1.5;
     text-align: left;
     margin-left: 50px; 
@@ -29,32 +23,98 @@ body {
     animation: fadeIn 2s forwards; 
 }
 
-
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 
-.continue-link {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: rgb(237, 89, 3);
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
 
-
-.continue-link:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(237, 89, 3);
-    border: 2px solid rgb(237, 89, 3);
-}
+  .relative {
+    position: relative;
+    width: 6318.72px;
+    height: 4564.8px;
+    background: url("../core2project1/assets/Asset\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 6318.72px 4564.8px;
+    z-index: -9;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(237, 89, 3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 6;
+    transform: translate(-50%, -50%);
+  }
+  
+  #circle1 {
+    left: 2296.6px;
+    top: 755.35px;
+  }
+  
+  #circle2 {
+    left: 1840.41px;
+    top: 2212.5px;
+  }
+  
+  #circle3 {
+    left: 2904.2px;
+    top: 2506.44px;
+  }
+  
+  #circle4 {
+    left: 2450.75px;
+    top: 3959.06px;
+  }
+  
+  #circle5 {
+    left: 3732.61px;
+    top: 872.97px;
+  }
+  
+  #circle6 {
+    left: 3577.63px;
+    top: 1613.44px;
+  }
+  
+  #circle7 {
+    left: 4645.15px;
+    top: 2047.52px;
+  }
+  
+  #circle8 {
+    left: 3890.18px;
+    top: 3938.34px;
+  }
+  
+  .hover-text {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: -50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 14px; 
+    white-space: nowrap; 
+    max-width: 200px; 
+    overflow: visible; 
+    z-index: 10; 
+  }
+  
+  .circle:hover .hover-text {
+    display: block; 
+  }
+  

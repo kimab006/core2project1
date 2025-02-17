@@ -1,87 +1,42 @@
 body {
+  margin: 0;
   background-color: black;
-}
-
-.relative {
-  position: relative;
-  width: 6318.72px;
-  height: 4564.8px;
-  background: url("../core2project1/assets/Asset\ 1.png");
-  background-repeat: no-repeat;
-  background-size: 6318.72px 4564.8px;
-  z-index: -9;
-}
-
-.circle {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: rgb(237, 89, 3);
-  border-radius: 50%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  z-index: 6;
-  transform: translate(-50%, -50%);
+  font-family: "Space Mono", serif;
+  font-weight: 100;
+  font-style: light;
 }
 
-#circle1 {
-  left: 2296.6px;
-  top: 755.35px;
-}
-
-#circle2 {
-  left: 1840.41px;
-  top: 2212.5px;
-}
-
-#circle3 {
-  left: 2904.2px;
-  top: 2506.44px;
-}
-
-#circle4 {
-  left: 2450.75px;
-  top: 3959.06px;
-}
-
-#circle5 {
-  left: 3732.61px;
-  top: 872.97px;
-}
-
-#circle6 {
-  left: 3577.63px;
-  top: 1613.44px;
-}
-
-#circle7 {
-  left: 4645.15px;
-  top: 2047.52px;
-}
-
-#circle8 {
-  left: 3890.18px;
-  top: 3938.34px;
-}
-
-.hover-text {
-  display: none;
-  color: white;
+.container {
   text-align: center;
-  padding: 10px;
-  position: absolute;
-  top: -50px; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  font-size: 14px; 
-  white-space: nowrap; 
-  max-width: 200px; 
-  overflow: visible; 
-  z-index: 10; 
 }
 
-.circle:hover .hover-text {
-  display: block; 
+.start-link {
+  color: rgb(237, 89, 3);
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.start-link:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(237, 89, 3);
+  border: 2px solid rgb(237, 89, 3);
+}
+
+
+
+
+
+
+
+
+
+
+

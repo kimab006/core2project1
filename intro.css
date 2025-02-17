@@ -1,33 +1,65 @@
-
 body {
     margin: 0;
     background-color: black;
+    color: rgb(237, 89, 3);
+    font-family: "Space Mono", serif;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Space Mono", serif;
-    font-weight: 100;
-    font-style: light;
-}
-
-.container {
-    text-align: center;
-}
-
-.start-link {
-    color: rgb(237, 89, 3);
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
+}
+.content {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.message {
+    font-size: 27px;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 50px; 
+    width: 40vw; 
+    opacity: 0; 
+    animation: fadeIn 2s forwards; 
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.continue-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: rgb(237, 89, 3);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
-
-.start-link:hover {
+.continue-link:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(237, 89, 3);
     border: 2px solid rgb(237, 89, 3);
 }
 
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .message {
+        font-size: 20px; 
+        margin-left: 30px; 
+        width: 80vw; 
+    }
+    .continue-link {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+}
