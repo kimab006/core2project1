@@ -48,3 +48,18 @@ body {
     color: rgb(237, 89, 3);
     border: 2px solid rgb(237, 89, 3);
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .message {
+        font-size: 20px; 
+        margin-left: 30px; 
+        width: 80vw; 
+    }
+    .continue-link {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+}
